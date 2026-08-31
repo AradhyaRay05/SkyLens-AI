@@ -157,29 +157,6 @@ npm run dev
 
 ---
 
-## ☁️ 100% Free Cloud Deployment
-
-### 1️⃣ Deploy Backend on [Render](https://render.com) (Free Tier):
-1. Sign in to [Render.com](https://render.com) and click **New +** → **Web Service**.
-2. Connect your GitHub repository: `SkyLens-AI`.
-3. Configure the settings:
-   - **Name**: `skylens-api`
-   - **Root Directory**: `backend` 👈 *(Important!)*
-   - **Runtime**: `Python 3`
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-   - **Instance Type**: `Free (512 MB RAM)`
-4. Click **Deploy Web Service**! Your API endpoint: `https://skylens-api.onrender.com`.
-
-### 2️⃣ Deploy Frontend on [Vercel](https://vercel.com) (Free Tier):
-1. Import your `SkyLens-AI` repository on [Vercel](https://vercel.com).
-2. Set **Root Directory** to `frontend`.
-3. Add Environment Variable:
-   - `NEXT_PUBLIC_API_URL` = `https://skylens-api.onrender.com`
-4. Click **Deploy**!
-
----
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
